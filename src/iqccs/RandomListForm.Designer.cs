@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridRandomList = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridRandomList)).BeginInit();
@@ -37,6 +39,14 @@
             // 
             this.gridRandomList.AllowUserToAddRows = false;
             this.gridRandomList.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridRandomList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridRandomList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridRandomList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id});
@@ -48,14 +58,17 @@
             this.gridRandomList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridRandomList.Size = new System.Drawing.Size(284, 362);
             this.gridRandomList.TabIndex = 0;
-            this.gridRandomList.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.gridRandomList_RowsAdded);
-            this.gridRandomList.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.gridRandomList_RowsRemoved);
+            this.gridRandomList.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridRandomList_DataBindingComplete);
             // 
             // Id
             // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Id.DefaultCellStyle = dataGridViewCellStyle2;
             this.Id.HeaderText = "序号";
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
+            this.Id.Width = 80;
             // 
             // RandomListForm
             // 

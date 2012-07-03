@@ -38,15 +38,11 @@ namespace iqccs
             for(int i = 0; i< this.data.Length; i++)
                 table.Rows.Add(this.data[i]);
             this.gridRandomList.AutoGenerateColumns = true;
+            this.gridRandomList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             this.gridRandomList.DataSource = table;
         }
 
-        private void gridRandomList_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
-        {
-            ResetId();
-        }
-
-        private void gridRandomList_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        private void gridRandomList_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             ResetId();
         }

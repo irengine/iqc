@@ -59,6 +59,18 @@
     <Compile Include="DemoForm.Designer.cs">
       <DependentUpon>DemoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="rule\Rule7T.cs" />
+    <Compile Include="rule\Rule9X.cs" />
+    <Compile Include="rule\Rule6X.cs" />
+    <Compile Include="rule\Rule31S.cs" />
+    <Compile Include="rule\Rule2of32S.cs" />
+    <Compile Include="rule\Rule12X.cs" />
+    <Compile Include="rule\Rule8X.cs" />
+    <Compile Include="rule\Rule10X.cs" />
+    <Compile Include="rule\Rule41S.cs" />
+    <Compile Include="rule\RuleR4S.cs" />
+    <Compile Include="rule\Rule12S.cs" />
+    <Compile Include="rule\IRule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomListForm.cs">
@@ -67,6 +79,9 @@
     <Compile Include="RandomListForm.Designer.cs">
       <DependentUpon>RandomListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="rule\Rule13S.cs" />
+    <Compile Include="rule\Rule22S.cs" />
+    <Compile Include="rule\RuleManager.cs" />
     <EmbeddedResource Include="DemoForm.resx">
       <DependentUpon>DemoForm.cs</DependentUpon>
     </EmbeddedResource>
